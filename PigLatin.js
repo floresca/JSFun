@@ -6,8 +6,8 @@ function translatePigLatin(str) {
   } else {
     let arr = str.split('');
     for(let i = 0; i < str.length; i++){
-      if(vowels.includes(arr[i]) != true){
-        arr.push(arr[i]);
+      if(!vowels.includes(arr[0])){
+        arr.push(arr[0]);
         arr.shift();
       } 
     }
