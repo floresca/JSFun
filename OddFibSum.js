@@ -24,3 +24,27 @@ function sumFibs(num) {
 }
 
 sumFibs(4);
+
+function sumFibs(num) {
+  let first = 2;
+  let hold;
+  let secondHold;
+  let OddFibSum;
+  
+  if (num < 3){
+    OddFibSum = num;
+  } else {
+    OddFibSum = first;
+    for(let i = 2; i <= num; i++){
+      hold += first;
+      first = 1;
+      
+      if (hold == 1 || hold % 2 != 0) {
+        OddFibSum += hold;
+      }
+    }
+  }
+  return OddFibSum;
+}
+
+sumFibs(4);
