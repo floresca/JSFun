@@ -1,6 +1,5 @@
+
 var randomAdder = () => {
-    //Create a function that adds together the sum of 15 random numbers
-    //console.log the total
 
     let values = 0;
     for(let i = 0; i < 15; i++){
@@ -8,6 +7,6 @@ var randomAdder = () => {
     }
 
     console.log('total is', values);
-}
+};
 
 randomAdder();
