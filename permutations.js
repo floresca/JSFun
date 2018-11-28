@@ -6,9 +6,9 @@ function permAlone(str) {
 
   if (stringLength > 1){
     while (factorial > 1){
-        permutations = permutations * (factorial - 1);
-        factorial--;
-      }
+      permutations = permutations * (factorial - 1);
+      factorial--;
+    }
   }
   
   console.log(permutations);
@@ -18,9 +18,9 @@ function permAlone(str) {
   for (let i = 0; i < permutations; i++){
     
     let floatingArray = [];
-    
+
     for (let k = 0; k < stringLength; k++){
-        floatingArray.push(arrayOfLetters[k]);
+      floatingArray.push(arrayOfLetters[k]);
     }
     
     let letterToCompare = floatingArray.splice(i, 1);
@@ -28,9 +28,9 @@ function permAlone(str) {
     let floatArrayLength = floatingArray.length;
 
     for (let j = 0; j < floatArrayLength; j++){
-        if (letterToCompare[0] == floatingArray[j]){
-            repeats++;
-        }
+      if (letterToCompare[0] == floatingArray[j]){
+        repeats++;
+      }
     }
   }
   
