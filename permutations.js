@@ -15,24 +15,24 @@ function permAlone(str) {
 
   let repeats = 0;
 
-  for (let i = 0; i < permutations; i++){
+  // for (let i = 0; i < permutations; i++){
     
-    let floatingArray = [];
+  //   let floatingArray = [];
 
-    for (let k = 0; k < stringLength; k++){
-      floatingArray.push(arrayOfLetters[k]);
-    }
+  //   for (let k = 0; k < stringLength; k++){
+  //     floatingArray.push(arrayOfLetters[k]);
+  //   }
     
-    let letterToCompare = floatingArray.splice(i, 1);
+  //   let letterToCompare = floatingArray.splice(i, 1);
 
-    let floatArrayLength = floatingArray.length;
+  //   let floatArrayLength = floatingArray.length;
 
-    for (let j = 0; j < floatArrayLength; j++){
-      if (letterToCompare[0] == floatingArray[j]){
-        repeats++;
-      }
-    }
-  }
+  //   for (let j = 0; j < floatArrayLength; j++){
+  //     if (letterToCompare[0] == floatingArray[j]){
+  //       repeats++;
+  //     }
+  //   }
+  // }
   
   if(repeats > 0){
     permutations -= repeats * 2;
