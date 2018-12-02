@@ -13,6 +13,9 @@ function permAlone(str) {
   
   console.log(permutations);
 
+//Every 2 repeats counter needs to go down by extra 2 to eliminate issues like aabba
+
+
   let repeats = 0;
 
   for (let i = 0; i < permutations; i++){
